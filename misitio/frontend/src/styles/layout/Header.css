@@ -1,0 +1,28 @@
+.header{
+    background-color:rgb(175, 176, 180);
+    grid-area: header;
+    padding: 3px;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.logo{
+    display: flex;
+    max-height: 80px;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+.contenedor-redes{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+
+}
+.img-redes{
+    width: 20px;
+    margin-right: 20px;
+}

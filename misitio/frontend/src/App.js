@@ -1,34 +1,10 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import '../src/App.css';
 
 import Header from './components/layout/Header';
 import Nav from './components/layout/Nav';
 import Footer from './components/layout/Footer';
+import Aside from './components/layout/Aside';
 
 import ContactoPage from './pages/ContactoPage';
 import NosotrosPage from './pages/NosotrosPage';
@@ -37,11 +13,11 @@ import ServiciosPage from './pages/ServiciosPage';
 import HomePage from "./pages/HomePage";
 
 
-
 function App(){
   return(
-    <div className="App">
+    <div className="contenedor">
       <Header/>
+      
       <BrowserRouter>
         <Nav/>
         <Routes>
@@ -51,10 +27,9 @@ function App(){
             <Route path="/galeria" element={<GaleriaPage/>}/>
             <Route path="/contacto" element={<ContactoPage/>}/>
         </Routes>
-      
       </BrowserRouter>
 
-      
+
       <Footer/>
     </div>
   );

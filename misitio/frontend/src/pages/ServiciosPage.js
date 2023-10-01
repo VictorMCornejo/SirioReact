@@ -1,6 +1,7 @@
+import '../styles/pages/ServiciosPage.css'
 const ServiciosPage=(prop)=>{
     return(
-        <div>ServiciosPage</div>
+        <div className="main">Proximamente: ServiciosPage</div>
     );
 }
 export default ServiciosPage;

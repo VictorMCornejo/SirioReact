@@ -1,13 +1,32 @@
+import '../../styles/layout/Footer.css';
+import Nav from './Nav.js';
+
 const Footer=(props)=>{
     return(
-        <div>
-            <p>Copyright...</p>
-            
-            <p>Mi Empresa</p>
-            <p>Direccion</p>
-            <p>Localidad</p>
-            <p>Telefono</p>
-        </div>
+        <footer className="footer">
+           <div className="contenedorWidget">
+
+                <div className="widget-footer1">
+                    <a href="http://www.ole.com.ar">
+                        <img src="images/logo.png"  class="logo" alt="MiSitio"/>
+                    </a>
+                </div>
+
+     
+
+
+                <div className="widget-footer3">
+                    <h3>EMPRESA</h3>
+                    <p>Direccion 111</p>
+                    <p>Localidad - Ciudad</p>
+                    <p>Telefono</p>
+                </div>
+            </div>
+
+            <div className="copyright">
+                <p>Copyright...</p>
+            </div>
+        </footer>
         
     )
 
