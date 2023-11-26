@@ -1,11 +1,7 @@
-*{
-    box-sizing: border-box;
-
-}
 .contenedor-contacto{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 10px;
+    padding: 150px 10px;
     margin: 0 auto;
 
     @media only screen and (min-width: 1000px){
@@ -41,6 +37,10 @@
     width: 100%;
     padding: 5px;
 }
+.formulario h5{
+    margin: 0 auto;
+}
+
 .anchoCompleto{
     grid-column: 1/-1;
 }

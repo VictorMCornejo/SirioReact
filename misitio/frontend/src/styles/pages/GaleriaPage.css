@@ -1,18 +1,12 @@
-
-*{
-    box-sizing: border-box;
-}
 .contenedor-fotos{
     display: grid;
     gap: 25px;
     grid-auto-rows: 300px;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    padding: 25px;
+    padding: 125px;
     grid-auto-flow: dense;
     box-sizing: border-box;
-    
 }
-
 .contenedor-fotos img{
 
    width: 100%;

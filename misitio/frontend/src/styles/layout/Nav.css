@@ -1,26 +1,33 @@
 .nav{
     grid-area: nav;
+    background-color: red;
     align-content: center;
-    margin: -20px 0px;
+    box-sizing: border-box;
+    z-index: 1;
 }
 .nav ul{
     display: flex;
-    background-color: rgb(201, 207, 221);
     list-style-type: none; /* quitar viñeta */
-    align-content: center;
-    justify-content: center;
     text-decoration: none;
     padding: 10px;
+    margin: 0 auto;
 }
 .nav li{
-    width: 200px;
-    margin: 0px;
+    width: 199px;
     text-align: center;
     align-content: center;
 }
+.nav button{
+    width: 70px;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+}
 .nav a{
     text-decoration: none;
-    padding: 10px 50px;
+    padding: 10px;
+    font-weight: bolder;
+    color:white;
 }
 .nav a:hover{
     opacity: 0.5;
@@ -28,6 +35,6 @@
     color: black;
 }
 .activo{
-    background-color: rgb(117, 123, 184);
-    color: beige;
+    background-color: rgb(230, 115, 115);
+    color: black;
 }

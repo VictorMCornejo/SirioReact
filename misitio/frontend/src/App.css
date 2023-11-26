@@ -1,25 +1,20 @@
 *{
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 .contenedor{
   display: grid;
-  gap: 5px;
   grid-template:
-    "header header header" 100px
+    "header header header" 80px
        "nav nav nav" auto
-      /*"portada portada portada" 600px*/
       "main main main" auto
       "footer footer footer" 200px/
-      40% 40% 15%;
+      40% 40% 20%;
 
   justify-content: center;
-  padding: 10px;
 }
 .main{
-  background-color: rgb(195, 202, 214);
+  background-color: #c3cad6;
   grid-area: main;
-  padding: 20px;
-  margin: 30px 0px; 
 }
 .main h2{
   text-align: center;
@@ -27,8 +22,13 @@
 }
 .main button{
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 5px;
+  width: fit-content;
 
+}
+.svg-blanco{
+  fill: white; 
+  margin: -5px;
 }
 
 

@@ -1,5 +1,5 @@
-import { Fragment } from 'react'
-import '../../styles/layout/Header.css'
+import '../../styles/layout/Header.css';
+
 
 const Header=(props)=>{
     return(
@@ -8,14 +8,13 @@ const Header=(props)=>{
             <div className="flex">
 
                 <a href="/">
-                    <img src="images/logo.png" class="logo" alt="MiSitio"/>
+                    <img src="images/logo.png" className="logo" alt="MiSitio"/>
                 </a>
-                <h1>Mi sitio web</h1>
-
-                <div class="contenedor-redes">              
-                    <img src="images/youtube.svg" alt="Youtube" className="img-redes"></img>    
-                    <img src="images/facebook.svg" alt="facebook" className="img-redes"></img>  
-                    <img src="images/square-instagram.svg" alt="instagram" className="img-redes"></img>  
+                
+                <div class="contenedor-redes">
+                    <a href="http://www.youtube.com"><img src="images/youtube.svg" alt="Youtube" className="img-redes"></img></a>                
+                    <a href="http://www.facebook.com"><img src="images/facebook.svg" alt="facebook" className="img-redes"></img></a>    
+                    <a href="http://www.instagram.com"><img src="images/square-instagram.svg" alt="instagram" className="img-redes"></img></a>    
                 </div>
 
             </div>

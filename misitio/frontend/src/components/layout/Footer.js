@@ -1,5 +1,4 @@
 import '../../styles/layout/Footer.css';
-import Nav from './Nav.js';
 
 const Footer=(props)=>{
     return(
@@ -8,12 +7,9 @@ const Footer=(props)=>{
 
                 <div className="widget-footer1">
                     <a href="http://www.ole.com.ar">
-                        <img src="images/logo.png"  class="logo" alt="MiSitio"/>
+                        <img src="images/logo.png"  className="logo" alt="MiSitio"/>
                     </a>
                 </div>
-
-     
-
 
                 <div className="widget-footer3">
                     <h3>EMPRESA</h3>

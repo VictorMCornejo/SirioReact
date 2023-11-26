@@ -1,64 +1,35 @@
-.contenedor-nosotros1{
-
-    background-color: midnightblue;
+.nosotrosTestimonio{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-gap: 10px;
-    padding: 30px;
-    @media screen and (min-width: 700px){
-        grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    min-height: 400px;
+    width: 75%;
+    margin:0 auto;
+}
+.testimonioCol1{
+    align-self: center;
+    margin: 0 auto;
+}
+.testimonioCol1 img{
+    width: 250px;
+    border-radius: 50%;
+}
+
+.testimonioCol2{
+    align-self: center;
+    grid-column: 2/-1;
+    text-align: justify;
+}
+
+@media screen and (max-width: 700px){
+    .nosotrosTestimonio{
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 20px;
     }
-}
-.contenedor-icono-texto{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    background-color: lawngreen;
-    padding: 10px;
+    .testimonioCol2{
+        align-self: center;
+        grid-column: 1/-1;
 
-    @media screen and (min-width: 700px){
-        grid-template-columns: 1fr 4fr;
-       
     }
-    
-}
-.icono{
-    display: grid;
-    grid-template-columns: 1fr;
-    display: block;
-    padding: 10px;
-    background-color: orangered;
-
-}
-
-.icono img{
-    align-items: center;
-    justify-content: center;
-    max-width: 70px;
-    position: relative;
-    top: 100px;
-    right: -260px;
-
-    @media screen and (min-width: 700px){
-
-        position: relative;
-        top: 0px;
-        right: 0px;;
-
-    
-    }
-    
-}
-
-.texto{
-    display: grid;
-    grid-template-columns: 4fr;
-    background-color: lightcoral;
-    padding: 10px;
-}
-.contenedor-nosotros1 .titulo-principal{
-    display: grid;
-    grid-column: 1/-1;
-    background-color: lightcoral;
-
 }
