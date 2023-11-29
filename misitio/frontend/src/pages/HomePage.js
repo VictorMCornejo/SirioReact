@@ -3,6 +3,7 @@ import '../styles/layout/Opciones.css'
 import '../components/layout/Carousel'
 import Carousel from '../components/layout/Carousel';
 import PortadaPrincipal from '../components/layout/PortadaPrincipal';
+import Contactate from '../components/layout/Contactate';
 
 const HomePage=(prop)=>{
     return(
@@ -14,23 +15,23 @@ const HomePage=(prop)=>{
                 <h2>LISTA DE PLANES</h2>
                 <div className="contenedor-opciones">
                     <div className="opcion">
-                        <h3>OPCION1</h3>
-                        <h4>OPCION1</h4>
-                        <p>Lorem ipsum dolor sit amet consectuuuuuuuuuuuetur adipisicing elit. Totam beatae porro odit, aut animi accusantium iure fuga, cumque nulla dolorem repudiandae dolor eos, qui voluptatum recusandae exercitationem error. Iste, ex?</p>
+                        <h3>PLAN ORO</h3>
+                        <h4>El mas exigente</h4>
+                        <p>Brinda máxima calidad a través de una gama mayor de profesionales y servicios en todo el país, con diferenciales de confort.</p>
                         <a href="/servicios#servicio1"><button>Conocer mas</button></a>
                     </div>
 
                     <div className="opcion">
-                        <h3>OPCION2</h3>
-                        <h4>OPCION2</h4>
-                        <p>Lorem ipsum dolor sit amet consectuuuuuuuuuuuetur adipisicing elit. Totam beatae porro odit, aut animi accusantium iure fuga, cumque nulla dolorem repudiandae dolor eos, qui voluptatum recusandae exercitationem error. Iste, ex?</p>
+                        <h3>PLAN PLATA</h3>
+                        <h4>Para toda la familia</h4>
+                        <p>Se caracteriza por una combinación de calidad, agilidad y una perfecta relación costo-beneficio.</p>
                         <a href="/servicios#servicio2"><button>Conocer mas</button></a>
                     </div>
 
                     <div className="opcion">
-                        <h3>OPCION3</h3>
-                        <h4>OPCION3</h4>
-                        <p>Lorem ipsum dolor sit amet consectuuuuuuuuuuuetur adipisicing elit. Totam beatae porro odit, aut animi accusantium iure fuga, cumque nulla dolorem repudiandae dolor eos, qui voluptatum recusandae exercitationem error. Iste, ex?</p>
+                        <h3>PLAN BRONCE</h3>
+                        <h4>El mas economico</h4>
+                        <p>Es una alternativa para quienes desean acceder a un servicio de calidad sin priorizar detalles adicionales y optimizando su presupuesto.</p>
                         <a href="/servicios#servicio3"><button>Conocer mas</button></a>
                     </div>                
                 </div>
@@ -54,15 +55,9 @@ const HomePage=(prop)=>{
             <section className="confian">
                 <h2>confian en nosotros</h2>
                 <Carousel/>
-             
-            </section>
-                              
-            <section className="imagenEstatica seccion1">       
-                    <h2>TENES DUDAS?</h2>
-                    <h3>Contactate con nosotros</h3>
-                    <a href="/contacto"><button>Conocer mas</button></a>
             </section>
 
+            <Contactate/>
         </div>
     );
 }

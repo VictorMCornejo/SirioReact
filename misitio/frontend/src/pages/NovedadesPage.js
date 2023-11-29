@@ -18,14 +18,14 @@ const NovedadesPage=(prop)=>{
         };
         cargarNovedades();
     },[]);
-    console.log(novedades);
 
     return(
         <div class="main justify-content-center">
             {loading? (
                 <p>Cargando...</p>
             ):(
-                novedades.map(item=><NovedadItem key={item.id}
+                novedades.map(item=><NovedadItem 
+                    key={item.id}
                     imagen={item.imagen}
                     titulo={item.titulo} 
                     subtitulo={item.subtitulo}

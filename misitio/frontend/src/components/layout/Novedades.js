@@ -5,7 +5,7 @@ const NovedadItem=(props)=>{
     return(
         <div className="container mt-5">
             <div class="row text-white bg-dark mb-5">
-                <div className="col-4 align-self-center">
+                <div className="col-4 p-3 align-self-center">
                     <img src={imagen} />
                 </div>
 
